@@ -19,6 +19,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript">
+      var date = (moment().format('LL'));
+    </script>
     <title>Work Day Scheduler</title>
   </head>
 
@@ -26,111 +30,110 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p class="lead" id="currentDay">Today is <script type="text/javascript">document.write(date)</script>.</p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <div class="row">
+      <div class="row time-block">
         <div class="col-sm-2">
           <p>9 AM</p>
         </div>
         <div class="col-sm-8">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero totam id a ipsum voluptates commodi autem voluptatum dignissimos praesentium, dicta aperiam. Qui laboriosam, doloribus provident ratione ipsam dolores? Quod, ducimus.</p>
+          <p class="description text-area"></p>
         </div>
         <div class="col-sm-2">
-          <button type="button" class="btn btn-info" id="save">Save</button>
+          <button type="button" class="saveBtn btn-info" id="save">Save</button>
         </div>
       </div>
-      <div class="row">
+      <div class="row time-block">
         <div class="col-sm-2">
           <p>10 AM</p>
         </div>
         <div class="col-sm-8">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero totam id a ipsum voluptates commodi autem voluptatum dignissimos praesentium, dicta aperiam. Qui laboriosam, doloribus provident ratione ipsam dolores? Quod, ducimus.</p>
+          <p class="description text-area"></p>
         </div>
         <div class="col-sm-2">
-          <button type="button" class="btn btn-info" id="save">Save</button>
+          <button type="button" class="saveBtn btn-info" id="save">Save</button>
         </div>
       </div>
-      <div class="row">
+      <div class="row time-block">
         <div class="col-sm-2">
           <p>11 AM</p>
         </div>
         <div class="col-sm-8">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero totam id a ipsum voluptates commodi autem voluptatum dignissimos praesentium, dicta aperiam. Qui laboriosam, doloribus provident ratione ipsam dolores? Quod, ducimus.</p>
+          <p class="description text-area"></p>
         </div>
         <div class="col-sm-2">
-          <button type="button" class="btn btn-info" id="save">Save</button>
+          <button type="button" class="saveBtn btn-info" id="save">Save</button>
         </div>
       </div>
-      <div class="row">
+      <div class="row time-block">
         <div class="col-sm-2">
           <p>12 PM</p>
         </div>
         <div class="col-sm-8">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero totam id a ipsum voluptates commodi autem voluptatum dignissimos praesentium, dicta aperiam. Qui laboriosam, doloribus provident ratione ipsam dolores? Quod, ducimus.</p>
+          <p class="description text-area"></p>
         </div>
         <div class="col-sm-2">
-          <button type="button" class="btn btn-info" id="save">Save</button>
+          <button type="button" class="saveBtn btn-info" id="save">Save</button>
         </div>
       </div>
-      <div class="row">
+      <div class="row time-block">
         <div class="col-sm-2">
           <p>1 PM</p>
         </div>
         <div class="col-sm-8">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero totam id a ipsum voluptates commodi autem voluptatum dignissimos praesentium, dicta aperiam. Qui laboriosam, doloribus provident ratione ipsam dolores? Quod, ducimus.</p>
+          <p class="description text-area"></p>
         </div>
         <div class="col-sm-2">
-          <button type="button" class="btn btn-info" id="save">Save</button>
+          <button type="button" class="saveBtn btn-info" id="save">Save</button>
         </div>
       </div>
-      <div class="row">
+      <div class="row time-block">
         <div class="col-sm-2">
           <p>2 PM</p>
         </div>
         <div class="col-sm-8">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero totam id a ipsum voluptates commodi autem voluptatum dignissimos praesentium, dicta aperiam. Qui laboriosam, doloribus provident ratione ipsam dolores? Quod, ducimus.</p>
+          <p class="description text-area"></p>
         </div>
         <div class="col-sm-2">
-          <button type="button" class="btn btn-info" id="save">Save</button>
+          <button type="button" class="saveBtn btn-info" id="save">Save</button>
         </div>
       </div>
-      <div class="row">
+      <div class="row time-block">
         <div class="col-sm-2">
           <p>3 PM</p>
         </div>
         <div class="col-sm-8">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero totam id a ipsum voluptates commodi autem voluptatum dignissimos praesentium, dicta aperiam. Qui laboriosam, doloribus provident ratione ipsam dolores? Quod, ducimus.</p>
+          <p class="description text-area"></p>
         </div>
         <div class="col-sm-2">
-          <button type="button" class="btn btn-info" id="save">Save</button>
+          <button type="button" class="saveBtn btn-info" id="save">Save</button>
         </div>
       </div>
-      <div class="row">
+      <div class="row time-block">
         <div class="col-sm-2">
           <p>4 PM</p>
         </div>
         <div class="col-sm-8">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero totam id a ipsum voluptates commodi autem voluptatum dignissimos praesentium, dicta aperiam. Qui laboriosam, doloribus provident ratione ipsam dolores? Quod, ducimus.</p>
+          <p class="description text-area"></p>
         </div>
         <div class="col-sm-2">
-          <button type="button" class="btn btn-info" id="save">Save</button>
+          <button type="button" class="saveBtn btn-info" id="save">Save</button>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-2">
+      <div class="row time-block">
+        <div class="col-sm-2 text-area">
           <p>5 PM</p>
         </div>
         <div class="col-sm-8">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero totam id a ipsum voluptates commodi autem voluptatum dignissimos praesentium, dicta aperiam. Qui laboriosam, doloribus provident ratione ipsam dolores? Quod, ducimus.</p>
+          <p class="description text-area"></p>
         </div>
         <div class="col-sm-2">
-          <button type="button" class="btn btn-info" id="save">Save</button>
+          <button type="button" class="saveBtn btn-info" id="save">Save</button>
         </div>
       </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
 </html>
